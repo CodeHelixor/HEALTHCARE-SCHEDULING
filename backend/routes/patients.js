@@ -3,7 +3,7 @@ const Patient = require('../models/patient.model');
 const Appointment = require('../models/appointment.model');
 const jwt = require('jsonwebtoken');
 const stripe =require("stripe")("process.env.STRIPE_SECRET_KEY")
-const uuid = require('uuid/v4');
+const { v4: uuidv4 } = require('uuid');
 
 // To get all the patients
 // ** ONLY FOR TESTING **
@@ -183,8 +183,8 @@ router.route('/upcoming-appointments').post(async (req, res) => {
 
 router.route("/payment").post(async (req,res)=>{
     const {finalBalnce, token}=req.body;
-    console.log(product);
-  const idempotencyKey = uuid();
+    // console.log(product);
+  const idempotencyKey = uuidv4();
 
   return stripe.customers
   .create({
