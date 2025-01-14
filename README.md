@@ -41,6 +41,9 @@
 ![Hompage doctor login](https://github.com/Project-Based-Learning-IT/healthcare-appointment-scheduling-app/blob/calendar/Software-Engineering/Screenshots/original_login%20both.jpg)
 
 ### Doctor Login
+**USERNAME** : test
+**Password** : test
+
 ![Doctor login](https://github.com/Project-Based-Learning-IT/healthcare-appointment-scheduling-app/blob/calendar/Software-Engineering/Screenshots/original_doctor%20login.jpg)
 
 ### Doctor's Today's Schedule
