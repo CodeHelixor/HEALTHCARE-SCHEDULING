@@ -2,7 +2,7 @@ const router = require('express').Router();
 const Patient = require('../models/patient.model');
 const appointmentImport = require('../models/appointment.model');
 const jwt = require('jsonwebtoken');
-const stripe = require("stripe")("process.env.STRIPE_SECRET_KEY")
+const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY)
 const { v4: uuidv4 } = require('uuid');
 const { Appointment } = appointmentImport;
 
